@@ -53,7 +53,7 @@ The OR operator, represented by the pipe symbol (|), provides a way to specify a
 Character classes, exemplified by [a-z], \d, and ., define sets of characters that the regex can match. In the email validation regex /^(a-z0-9_.-)+@([\da-z.-]+).([a-z.]{2,6})$/, these classes specify acceptable characters for the username, domain name, and top-level domain. Character classes are crucial for constraining the input space and ensuring that only valid characters are considered during the validation process.
 
 ### Flags
-
+While the email validation regex /^(a-z0-9_.-)+@([\da-z.-]+).([a-z.]{2,6})$/ doesn't explicitly use flags, they play a significant role in regex patterns. Flags, such as case-insensitivity (i), global matching (g), and multiline matching (m), can modify how the regex engine interprets the pattern. Although not explicitly utilized in this example, understanding flags is essential for adapting the regex to specific validation requirements.
 
 ### Grouping and Capturing
 
