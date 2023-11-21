@@ -5,6 +5,23 @@ In this tutorial, we'll explore the construction and application of a regular ex
 ## Summary
 
 The email validation regex, /^(a-z0-9_.-)+@([\da-z.-]+).([a-z.]{2,6})$/, serves as a powerful tool for ensuring the correctness of email addresses. Breaking down its components reveals a precise approach to validating user input. The expression strictly checks for a valid username, the presence of the "@" symbol, a legitimate domain name, and a top-level domain of appropriate length. Whether you're developing a form or implementing input validation in your application, understanding and utilizing this regex can significantly enhance the accuracy of email address verification. This tutorial provides a comprehensive guide on the intricacies of this regex, empowering you to implement robust email validation in your projects.
+```
+const emailRegex = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+
+const isValidEmail = (email) => {
+  return emailRegex.test(email);
+};
+
+// Example usage:
+const emailToCheck = 'example@email.com';
+if (isValidEmail(emailToCheck)) {
+  console.log(`${emailToCheck} is a valid email address.`);
+} else {
+  console.log(`${emailToCheck} is not a valid email address.`);
+}
+
+```
+
 
 ## Table of Contents
 
