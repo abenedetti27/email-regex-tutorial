@@ -68,10 +68,10 @@ The email validation regex's quantifiers (+ and {2,6}) exhibit a default greedy 
 While not explicitly defined in the email validation regex /^(a-z0-9_.-)+@([\da-z.-]+).([a-z.]{2,6})$/, understanding boundaries is crucial for refining the validation process. Word boundaries (\b) can be employed to ensure that the email address is distinct and not part of a larger string. Incorporating boundaries enhances the precision of the regex in identifying valid email addresses within a given context.
 
 ### Back-references
-
+Back-references, achieved through the use of \1, \2, etc., allow referencing previously captured groups within the regex. While not employed in this email validation example, back-references can be valuable in more complex patterns, enabling the validation of repeated sequences or ensuring consistency within the email address.
 
 ### Look-ahead and Look-behind
-
+Look-ahead (?=) and look-behind (?<=) assertions are powerful tools for refining the email validation process without including the asserted content in the match. While not utilized in /^(a-z0-9_.-)+@([\da-z.-]+).([a-z.]{2,6})$/, incorporating look-ahead and look-behind assertions can provide additional criteria for validating email addresses without altering the matched content.
 
 ## Author
 
