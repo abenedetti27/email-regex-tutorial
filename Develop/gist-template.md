@@ -44,6 +44,7 @@ At the core of the email validation regex, /^(a-z0-9_.-)+@([\da-z.-]+).([a-z.]{2
 The use of ^ and $ anchors in /^(a-z0-9_.-)+@([\da-z.-]+).([a-z.]{2,6})$/ is pivotal for email validation. The caret (^) asserts the beginning of the string, ensuring that the regex starts matching from the start. Conversely, the dollar sign ($) marks the end, ensuring the entire string adheres to the defined pattern. Anchors play a crucial role in restricting the search space and ensuring the regex accurately validates email addresses.
 
 ### Quantifiers
+Quantifiers in the email validation regex, such as + and {2,6}, determine the quantity of characters that are acceptable in specific parts of the email address. The plus sign (+) indicates that there must be at least one or more occurrences of the preceding characters. The curly braces ({2,6}) set a specific range, allowing control over the minimum and maximum occurrences. These quantifiers contribute to the flexibility and precision of the email validation process.
 
 ### OR Operator
 
