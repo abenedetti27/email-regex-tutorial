@@ -62,8 +62,10 @@ The email validation regex employs parentheses for grouping, creating capture gr
 Bracket expressions, exemplified by [a-z], provide a concise way to define character sets within the email validation regex /^(a-z0-9_.-)+@([\da-z.-]+).([a-z.]{2,6})$/. They specify allowable characters for different segments of the email address. Bracket expressions contribute to the regex's readability and serve as a powerful tool for defining and constraining character sets.
 
 ### Greedy and Lazy Match
+The email validation regex's quantifiers (+ and {2,6}) exhibit a default greedy behavior, attempting to match as many characters as possible. This ensures comprehensive validation but may lead to longer matches. Understanding and using lazy matching (quantifiers followed by ?) when appropriate can optimize the regex, preventing excessive matching and enhancing performance without sacrificing accuracy.
 
 ### Boundaries
+While not explicitly defined in the email validation regex /^(a-z0-9_.-)+@([\da-z.-]+).([a-z.]{2,6})$/, understanding boundaries is crucial for refining the validation process. Word boundaries (\b) can be employed to ensure that the email address is distinct and not part of a larger string. Incorporating boundaries enhances the precision of the regex in identifying valid email addresses within a given context.
 
 ### Back-references
 
