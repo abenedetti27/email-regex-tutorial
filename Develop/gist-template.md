@@ -38,7 +38,7 @@ if (isValidEmail(emailToCheck)) {
 - [Look-ahead and Look-behind](#look-ahead-and-look-behind)
 
 ## Regex Components
-
+At the core of the email validation regex, /^(a-z0-9_.-)+@([\da-z.-]+).([a-z.]{2,6})$/, lie several crucial components. Anchors (^ and $) ensure that the pattern is applied from the beginning to the end of the string. Quantifiers (+ and {2,6}) dictate the quantity of characters allowed, contributing to the specificity of the validation. The OR operator (|) offers flexibility by allowing alternatives, and character classes ([a-z], \d) specify sets of characters that can be matched. Understanding these fundamental components is key to comprehending how the regex functions.
 
 ### Anchors
 
