@@ -50,6 +50,7 @@ Quantifiers in the email validation regex, such as + and {2,6}, determine the qu
 The OR operator, represented by the pipe symbol (|), provides a way to specify alternatives in the email validation regex /^(a-z0-9_.-)+@([\da-z.-]+).([a-z.]{2,6})$/. In this context, it allows for variations in the character set, providing flexibility in matching different parts of the email address. The OR operator is a versatile tool that enhances the regex's ability to accommodate diverse email address formats.
 
 ### Character Classes
+Character classes, exemplified by [a-z], \d, and ., define sets of characters that the regex can match. In the email validation regex /^(a-z0-9_.-)+@([\da-z.-]+).([a-z.]{2,6})$/, these classes specify acceptable characters for the username, domain name, and top-level domain. Character classes are crucial for constraining the input space and ensuring that only valid characters are considered during the validation process.
 
 ### Flags
 
