@@ -47,6 +47,7 @@ The use of ^ and $ anchors in /^(a-z0-9_.-)+@([\da-z.-]+).([a-z.]{2,6})$/ is piv
 Quantifiers in the email validation regex, such as + and {2,6}, determine the quantity of characters that are acceptable in specific parts of the email address. The plus sign (+) indicates that there must be at least one or more occurrences of the preceding characters. The curly braces ({2,6}) set a specific range, allowing control over the minimum and maximum occurrences. These quantifiers contribute to the flexibility and precision of the email validation process.
 
 ### OR Operator
+The OR operator, represented by the pipe symbol (|), provides a way to specify alternatives in the email validation regex /^(a-z0-9_.-)+@([\da-z.-]+).([a-z.]{2,6})$/. In this context, it allows for variations in the character set, providing flexibility in matching different parts of the email address. The OR operator is a versatile tool that enhances the regex's ability to accommodate diverse email address formats.
 
 ### Character Classes
 
