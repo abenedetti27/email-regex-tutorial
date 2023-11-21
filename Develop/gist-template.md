@@ -74,5 +74,8 @@ Back-references, achieved through the use of \1, \2, etc., allow referencing pre
 Look-ahead (?=) and look-behind (?<=) assertions are powerful tools for refining the email validation process without including the asserted content in the match. While not utilized in /^(a-z0-9_.-)+@([\da-z.-]+).([a-z.]{2,6})$/, incorporating look-ahead and look-behind assertions can provide additional criteria for validating email addresses without altering the matched content.
 
 ## Author
+Anna Benedetti is a novice full-stack developer who has spent the majority of her career in various roles at one of the world's largest tech companies. With nearly a decade of experience in user experience and creative services, she is particularly enthusiastic about creating web platforms that are beautiful, functional, and user-friendly.
+
+Connect with Anna on [LinkedIn](https://www.linkedin.com/in/anna-rose-benedetti/) or [Github](https://github.com/abenedetti27) to follow her journey.
 
 
