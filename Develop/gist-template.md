@@ -56,10 +56,10 @@ Character classes, exemplified by [a-z], \d, and ., define sets of characters th
 While the email validation regex /^(a-z0-9_.-)+@([\da-z.-]+).([a-z.]{2,6})$/ doesn't explicitly use flags, they play a significant role in regex patterns. Flags, such as case-insensitivity (i), global matching (g), and multiline matching (m), can modify how the regex engine interprets the pattern. Although not explicitly utilized in this example, understanding flags is essential for adapting the regex to specific validation requirements.
 
 ### Grouping and Capturing
-
+The email validation regex employs parentheses for grouping, creating capture groups that isolate distinct components of the email address. For instance, the expression /([\da-z.-]+)/ captures the domain name, enhancing the regex's modularity and facilitating access to specific parts of the matched string. Grouping and capturing are crucial for extracting relevant information from the validated email address.
 
 ### Bracket Expressions
-
+Bracket expressions, exemplified by [a-z], provide a concise way to define character sets within the email validation regex /^(a-z0-9_.-)+@([\da-z.-]+).([a-z.]{2,6})$/. They specify allowable characters for different segments of the email address. Bracket expressions contribute to the regex's readability and serve as a powerful tool for defining and constraining character sets.
 
 ### Greedy and Lazy Match
 
